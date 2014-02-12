@@ -25,5 +25,6 @@ for char in secret:
   for i in range(ord(char)):
     sleep(0.01)
     log_counter ^= i
+  print log_counter
 
-print strxor(secret, key).encode('hex') + " " + str(log_counter)
+print strxor(secret, key).encode('hex')
