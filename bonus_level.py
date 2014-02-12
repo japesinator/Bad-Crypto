@@ -9,6 +9,7 @@ from time import sleep
 secret = input("Please enter your plaintext: ")
 
 for char in secret:
+  log_counter = 0xFF
   for i in range(ord(char)):
     sleep(0.01)
     log_counter ^= i
