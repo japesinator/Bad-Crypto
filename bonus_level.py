@@ -8,23 +8,8 @@ from time import sleep
 
 secret = input("Please enter your plaintext: ")
 
-def random(size=16):
-  return open("/dev/urandom").read(size)
-
-key = random(len(secret))
-
-def strxor(a, b):	 # xor two strings of different lengths
-  if len(a) > len(b):
-    return "".join([chr(ord(x) ^ ord(y)) for (x, y) in zip(a[:len(b)], b)])
-  else:
-    return "".join([chr(ord(x) ^ ord(y)) for (x, y) in zip(a, b[:len(a)])])
-
-log_counter = 0xFF
-
 for char in secret:
   for i in range(ord(char)):
     sleep(0.01)
     log_counter ^= i
   print log_counter
-
-print strxor(secret, key).encode('hex')
