@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import sys
 
 # Usage: ./level_3.py, then input your plaintext enclosed by quotes
 
