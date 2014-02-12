@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 
-# Usage: ./level_2.py, then input your plaintext enclosed by quotes
+# Usage: ./level_4.py, then input your plaintext enclosed by quotes
 
 # hint: character by character encoding is a bad idea
 
